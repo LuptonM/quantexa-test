@@ -1,7 +1,6 @@
 import { simple_chart } from "./simple_chart.js";
 import { colour_chart } from "./colour_chart.js";
 
-
 export const generate_graph_data = (
   data,
   type,
@@ -42,5 +41,5 @@ export const generate_graph_data = (
       palette,
       xaxis_modification
     );
-  } 
+  }
 };

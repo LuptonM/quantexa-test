@@ -1,10 +1,8 @@
 export const palette_maker = (palette, length) => {
-
   let new_palette = [];
-  let colours_to_generate = length -palette.length;
+  let colours_to_generate = length - palette.length;
 
   if (colours_to_generate > 0) {
-  
     let new_colours = [];
     for (let i = 0; i < colours_to_generate; i++) {
       new_colours.push(
@@ -17,6 +15,5 @@ export const palette_maker = (palette, length) => {
     new_palette = palette.slice(0, length);
   }
 
- 
   return new_palette;
 };
