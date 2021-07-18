@@ -2,6 +2,7 @@ import { group_data } from "./group_by.js";
 import { unique_values } from "./unique_values.js";
 import { palette_maker } from "./palette_generator.js";
 import { sort_array_by_key } from "./sort_array_by_key.js";
+import moment from 'moment'
 
 const data_set_row_data = (grouped_data, value, column, valueColumn) => {
   let row_data = [];
@@ -44,9 +45,11 @@ export const colour_chart = (
     xaxis_modification
   );
 
-  grouped_data = sort_array_by_key(grouped_data, xaxis);
 
-  labels = unique_values(grouped_data, xaxis, xaxis_modification).sort();
+
+ grouped_data = sort_array_by_key(grouped_data, xaxis )
+
+  labels = unique_values(grouped_data, xaxis, xaxis_modification)
 
   if (xaxis_modification === "by_month") {
     labels.map((label) => {
