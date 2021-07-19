@@ -44,11 +44,8 @@ export default function GraphItem({ settings, index }) {
   }, [graph_data]);
 
   return (
-    <div
-      className="chart_container"
-      style={{ height: "100%", flex: 1, width: "90%" }}
-    >
-      <canvas id={"chart".concat(index)} />
+    <div className="chart_container">
+      <canvas id={"chart".concat(index)} style={{ padding: "40px 10px" }} />
     </div>
   );
 }

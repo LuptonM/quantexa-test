@@ -19,7 +19,7 @@ const graph_config = [
     yaxis: "Amount",
     yaxis_modification: "count",
     colour_column: "Invoice Currency Unit",
-    title: "Total expenditure (£) by month by currency",
+    title: "Count of transactions by month by currency",
     yaxis_log: true,
     xaxis_modification: "by_month",
     palette: default_palette,
